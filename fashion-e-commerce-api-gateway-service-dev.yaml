@@ -1,0 +1,17 @@
+logging:
+  level:
+    org:
+      springframework:
+        http:
+          server:
+            reactive: TRACE
+        cloud:
+          gateway: TRACE
+        web:
+          reactive: TRACE
+        boot:
+          autoconfigure:
+            web: TRACE
+    reactor:
+      netty: TRACE
+    redisratelimiter: TRACE
