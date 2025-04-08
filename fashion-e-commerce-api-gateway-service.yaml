@@ -6,8 +6,6 @@ spring:
       discovery:
         locator:
           enabled: true
-  profiles:
-    active: dev
 
 eureka:
   client:
