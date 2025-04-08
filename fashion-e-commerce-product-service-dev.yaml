@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      username: '{cipher}9d40cd4113b0fcdf5d9cd3ef994c9850efb7b90ce7c48dd11284c8f85cc696b8'
+      password: '{cipher}94b35a847ca84e65cb003f00efe6cf73a35ae773c8fe5acffdffcab5928a484b193e05494bca68cf1f5021bd0e6f30d2'
+      host: ${MONGO_HOST:fashion-e-commerce-clus.mytnu9q.mongodb.net}
+
+application:
+  BCrypt-length: ${BCRYPT_LENGTH:16}
+  jwt:
+    iss: ${JWT_ISS:https://kimi-fashion-e-commerce.com}
+    secret-key: '{cipher}bbfbcad8ab7e3dd48c11458ca256c955733270595a88e77fa6a0377b29a41f545a852c43e77242c4d38a14678e5386763f782b859720107c23e5b9539748c2c2'}
+    claim: ${JWT_CLAIM:payload}

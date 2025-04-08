@@ -10,8 +10,6 @@ eureka:
 spring:
   application:
     name: fashion-e-commerce-notification-service
-  profiles:
-    active: ${PROFILE:dev}
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     consumer:

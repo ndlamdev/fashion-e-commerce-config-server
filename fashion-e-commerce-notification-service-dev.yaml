@@ -1,0 +1,4 @@
+brevo:
+  api-key: "{cipher}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"
+  email: ${BREVO_EMAIL:kiminonawa1305@gmail.com}
+  name: ${BREVO_NAME:Kimi Fashion}
