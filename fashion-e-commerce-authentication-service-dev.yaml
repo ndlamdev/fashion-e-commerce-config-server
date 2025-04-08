@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${application.database}
     username: ${MYSQL_USERNAME:f980b526fbe733750379bd010aa75cbd69b76e0716f79eafcff92d4c781c3eaf}
-    password: ${MYSQL_PASSWORD:ae925665ca0434d53abb8f1b282cdd5624844a1d9f7594ecf0eb333372022215}
+    password: ${MYSQL_PASSWORD:67009e12bd4aae08943615816c32334b10197a19c724440bce2dfec55f49bb84}
     driver-class-name: ${MYSQL_DRIVER:com.mysql.cj.jdbc.Driver}
     hikari:
       auto-commit: ${MYSQL_AUT_COMMIT:on}
