@@ -1,4 +1,4 @@
 brevo:
-  api-key: "{cipher}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"
+  api-key: "{cipher}855574034a4c4d36a75b9b9edbb0350a3c954e71b4e4696d9bd09d4f60275f2fe3a02219923cfdeba691702e82e5b328dd80b3fa090cdeaca8b835f639a401ee815f7f7f899f1df10e4703f7a505ea22a8f8ff2b721be1ab1eaeb2b58d6287eb4ff41d1372d885bd5a6d29c194d0fae1"
   email: ${BREVO_EMAIL:kiminonawa1305@gmail.com}
   name: ${BREVO_NAME:Kimi Fashion}
