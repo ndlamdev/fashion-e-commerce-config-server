@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${application.database}
-    username: {cipher}f980b526fbe733750379bd010aa75cbd69b76e0716f79eafcff92d4c781c3eaf
-    password: {cipher}ae925665ca0434d53abb8f1b282cdd5624844a1d9f7594ecf0eb333372022215
+    username: ${MYSQL_USERNAME:'{cipher}f980b526fbe733750379bd010aa75cbd69b76e0716f79eafcff92d4c781c3eaf'}
+    password: ${MYSQL_PASSWORD:'{cipher}ae925665ca0434d53abb8f1b282cdd5624844a1d9f7594ecf0eb333372022215'}
     driver-class-name: ${MYSQL_DRIVER:com.mysql.cj.jdbc.Driver}
     hikari:
       auto-commit: ${MYSQL_AUT_COMMIT:on}
@@ -25,13 +25,13 @@ spring:
 
 application:
   admin:
-    email: {cipher}5162c870a1a56d735a282344df2e1e2fde2a9884c38a9ff8796c42e0722dc515274c2d88f7f498b8a994d68e8a9d92ac
-    password: {cipher}10566c1f4fbfef942b8ac55f36a32b8e8c2c0f91380ae878fe1aee17d003fd2c
+    email: ${USERNAME_ADMIN:'{cipher}5162c870a1a56d735a282344df2e1e2fde2a9884c38a9ff8796c42e0722dc515274c2d88f7f498b8a994d68e8a9d92ac'}
+    password: ${PASSWORD_ADMIN:'{cipher}10566c1f4fbfef942b8ac55f36a32b8e8c2c0f91380ae878fe1aee17d003fd2c'}
   database: ${MYSQL_DATABASE:authentication_fashion_e_commerce}
   BCrypt-length: ${BCRYPT_LENGTH:16}
   jwt:
     iss: ${JWT_ISS:https://kimi-fashion-e-commerce.com}
-    secret-key: {cipher}56d35a61253e7f710dceceb07613f06449784764fc4611ed11da947b82e56578a772ebe6c720a90922b1b4df507da1a8602c2901d320323c773a3abfabc82837
+    secret-key: ${JWT_SECRET_KEY:'{cipher}56d35a61253e7f710dceceb07613f06449784764fc4611ed11da947b82e56578a772ebe6c720a90922b1b4df507da1a8602c2901d320323c773a3abfabc82837'}
     claim: ${JWT_CLAIM:payload}
 
 logging:
