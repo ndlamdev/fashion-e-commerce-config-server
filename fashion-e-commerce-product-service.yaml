@@ -2,22 +2,6 @@ spring:
   application:
     name: fashion-e-commerce-product-service
 
-  data:
-    redis:
-      host: ${REDIS_HOST:localhost}
-      database: ${REDIS_DATABASE:10}
-      port: ${REDIS_PORT:6379}
-      username: ${REDIS_USERNAME:}
-      password: ${REDIS_PASSWORD:}
-      timeout: ${REDIS_TIMEOUT:60000}
-      connect-timeout: ${REDIS_CONNECT_TIMEOUT:60000}
-      lettuce:
-        pool:
-          max-active: ${REDIS_MAX_POOL_ACTIVE:8}
-          max-idle: ${REDIS_MAX_POOL_IDLE:8}
-          min-idle: ${REDIS_MIN_POOL_IDLE:0}
-          max-wait: ${REDIS_MAX_POOL_WAIT:-1}
-        
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     producer:
@@ -35,6 +19,20 @@ spring:
     mongodb:
       uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
       database: ${MONGO_DATABASE:fashion-e-commerce}
+    redis:
+      host: ${REDIS_HOST:localhost}
+      database: ${REDIS_DATABASE:10}
+      port: ${REDIS_PORT:6379}
+      username: ${REDIS_USERNAME:}
+      password: ${REDIS_PASSWORD:}
+      timeout: ${REDIS_TIMEOUT:60000}
+      connect-timeout: ${REDIS_CONNECT_TIMEOUT:60000}
+      lettuce:
+        pool:
+          max-active: ${REDIS_MAX_POOL_ACTIVE:8}
+          max-idle: ${REDIS_MAX_POOL_IDLE:8}
+          min-idle: ${REDIS_MIN_POOL_IDLE:0}
+          max-wait: ${REDIS_MAX_POOL_WAIT:-1}
 
 server:
   servlet:
