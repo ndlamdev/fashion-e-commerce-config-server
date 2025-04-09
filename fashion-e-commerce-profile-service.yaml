@@ -24,7 +24,7 @@ spring:
             type:
               mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_user_detail:com.lamnguyen.authentication_service.event.SaveUserDetailEvent"
   application:
-    name: fashion-e-commerce-authentication-service
+    name: fashion-e-commerce-profile-service
   jpa:
     hibernate:
       ddl-auto: none
