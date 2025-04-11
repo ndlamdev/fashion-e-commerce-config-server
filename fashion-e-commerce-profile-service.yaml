@@ -22,7 +22,18 @@ spring:
         spring:
           json:
             type:
-              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_user_detail:com.lamnguyen.authentication_service.event.SaveUserDetailEvent"
+              mapping: "infoCustomer:com.lamnguyen.profile_service.message.InfoCustomer"
+    consumer:
+      group-id: authenticationGroup
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "com.lamnguyen.profile_service.message"
+            type:
+              mapping: "saveUserDetailEvent:com.lamnguyen.profile_service.message.SaveUserDetailMessage"
   application:
     name: fashion-e-commerce-profile-service
   jpa:
