@@ -74,7 +74,7 @@ application:
       key: ${RESET_PASSWORD_TOKEN_KEY:RESET_PASSWORD_TOKEN}
       default-token: ${RESET_PASSWORD_DEFAULT_VALUE:default}
       expire: ${RESET_PASSWORD_EXPIRE:60}
-      blacklist: ${application.token.blacklist}:${application.token.refresh.key}
+      blacklist: ${application.token.blacklist}:${application.token.reset-password.key}
 
     otp:
       length: 6
