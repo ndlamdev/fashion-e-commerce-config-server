@@ -45,15 +45,15 @@ spring:
 application:
   white-list:
     - ${application.login-path}
-    - /v1/register
-    - /v1/logout
-    - /v1/verify
-    - /v1/resend-verify
-    - /v1/reset-password/**
-    - /v1/renew-access-token
-    - /greeting
+    - /auth/v1/register
+    - /auth/v1/logout
+    - /auth/v1/verify
+    - /auth/v1/resend-verify
+    - /auth/v1/reset-password/**
+    - /auth/v1/renew-access-token
+    - /authentication-service/greeting
 
-  login-path: ${LOGIN_PATH:/v1/login}
+  login-path: ${LOGIN_PATH:/auth/v1/login}
   prefix:
     role: ${PREFIX_ROLE:ROLE_}
     permission: ${PREFIX_PERMISSION:SCOPE_}
