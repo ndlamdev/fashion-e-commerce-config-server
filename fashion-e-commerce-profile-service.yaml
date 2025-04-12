@@ -24,7 +24,7 @@ spring:
             type:
               mapping: "infoCustomer:com.lamnguyen.profile_service.message.InfoCustomer"
     consumer:
-      group-id: authenticationGroup
+      group-id: user-detail
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
