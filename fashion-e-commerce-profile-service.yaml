@@ -56,4 +56,4 @@ spring:
 application:
   white-list:
     - /greeting
-    - /v1/customers/*
+    - /v1/customers/**
