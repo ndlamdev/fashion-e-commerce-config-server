@@ -31,9 +31,9 @@ spring:
         spring:
           json:
             trusted:
-              packages: "com.lamnguyen.profile_service.message"
+              packages: "save_user_detail"
             type:
-              mapping: "saveUserDetailEvent:com.lamnguyen.profile_service.message.SaveUserDetailMessage"
+              mapping: "save_user_detail:com.lamnguyen.profile_service.message.SaveUserDetailMessage"
   application:
     name: fashion-e-commerce-profile-service
   jpa:
