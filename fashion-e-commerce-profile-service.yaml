@@ -49,6 +49,8 @@ spring:
     schemas: ${application.database}
     url: ${spring.datasource.url}
     locations: classpath:db/migration
+    enabled: true
+    baseline-on-migrate: true
   jackson:
     mapper:
       sort-properties-alphabetically: false
@@ -56,3 +58,4 @@ spring:
 application:
   white-list:
     - /greeting
+    - /v1/customers/*
