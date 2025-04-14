@@ -21,7 +21,7 @@ spring:
       database: ${MONGO_DATABASE:fashion-e-commerce}
     redis:
       host: ${REDIS_HOST:localhost}
-      database: ${REDIS_DATABASE:10}
+      database: ${REDIS_DATABASE:11}
       port: ${REDIS_PORT:6379}
       username: ${REDIS_USERNAME:}
       password: ${REDIS_PASSWORD:}
