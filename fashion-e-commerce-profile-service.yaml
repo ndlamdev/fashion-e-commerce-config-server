@@ -57,4 +57,4 @@ application:
   white-list:
     - /greeting
     - /v1/profile/*
-    - /v1/profile/address/*
+    - /v1/profile/*/address/*
