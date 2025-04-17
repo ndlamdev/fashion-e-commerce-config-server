@@ -52,6 +52,7 @@ application:
     - /auth/v1/reset-password/**
     - /auth/v1/renew-access-token
     - /authentication-service/greeting
+    - /auth/v1/google/login
 
   login-path: ${LOGIN_PATH:/auth/v1/login}
   prefix:
