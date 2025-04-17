@@ -22,7 +22,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "infoCustomer:com.lamnguyen.profile_service.message.InfoCustomer"
+              mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
     consumer:
       group-id: user-detail
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
