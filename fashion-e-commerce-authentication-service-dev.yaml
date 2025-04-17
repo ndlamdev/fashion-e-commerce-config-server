@@ -22,6 +22,13 @@ spring:
           max-idle: ${REDIS_MAX_POOL_IDLE:8}
           min-idle: ${REDIS_MIN_POOL_IDLE:0}
           max-wait: ${REDIS_MAX_POOL_WAIT:-1}
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: "{cipher}AYBMTyiXio+0UUMNbxRlWjoilYIX61LjH1K1l5KVZKYkgXbdFdRPm+g/8qpAV5fn+DlDGilhAUcXNn+BMHRdwjkSn5cDZiicMSdUCFBe4ZM7b2VRUuYrqV/PprhPYIUElOJyijg8x7Q8DWt2AqYy3wuDU4nbM8JjfqEoy3Ax/4u733e6AXX1iIDQHcJgYbuWaHGdVS4KLMPN+NJIV55MgRLUF4EyZbzFq75sVC+aZjRU1a7hRSsOb5UOB4QbqA4vHGl0ZF4IZ3+y7uPeBu68al3tsv22kvAIou3Z9ZteZErPHi1FggPBJwmzu88ZpUl90L8az06D/BdO4dPjaUSu4GbsHRsFCcfvPI72n2XLIrMi4qE9+3JXH1VnCGJRjDLQpbCL8ega09fOeqwrK/3Y6XHsMVK+y/puo1D6GxxSDZTulACgA7pqD4X2pwGg+Dm+2PBAC5CpBKiNUfKsMnoJ89YIR6BDo7SYBDgHwy5nakPpwudaL81R7W37SHk3oMLd4sdq+uYe1BxE1v9roaaAbjudbq5jiET2qEcUizsJs2XHxoBaj9nMJs2l05SFaoCyl7hfAVRwYorbZAb9ugHqHYwuc3xN+AuqqPIwSg+sP9uCDnWy4khtPvwj8cHTEJjzG80="
+            client-secret: "{cipher}AYA2JWKtLwbRMEPz/zn+pwvrY72fXAHw9Q8aVhKPcPOPyQg0t6mFbRVozcw6MKlV2dKoc8YRnrvwEy4DwlBmHeYmGODDdm/UK1h+tb+Al3JBRV5Q/QWyF0fIzMa6LcRSW+7oVW20aG0Ogd7Pvbt7BkFSp2z1Km88hW3l0d/cyrB6psNAGSiWcvpIC6xEbC9Wl9F12S28dhzBQPeGaXPKEunTvoI6xVgbVHxAoCFPOp0VWsDEznVWhepiwr9ooPOva4GYqz5u36sNxv4FGqsA36N9lGECKyLtSqh2L08s1YIGCvxhllUD5YcqZ+yH7+ZXloen2ZykSpiStU5cSlh2JicLvPMW4MeJgoFcgPLF5U9yWrJTW7lTwT7q7GetNDVRI7C6uJLTWnyJD0YopgEfHl01AssHJWpQI9VEcVD8VLLoiutckP9DJwbOzMnp1Qr3aJ+4tNbMj6r1TJXhddstEDwi3Y8HiYgtS5/uDC0MbwKuJh2zYh5vV1iK/hhZROhXdCPTuBltYGQtFVB9Om+9Yqbda4NAB/KZKYLdC+UScUxlkcVBiesU4w0hrPqf6/jDc6d15Kt5KI+GpaZOTE1yotMM"
 
 application:
   admin:
