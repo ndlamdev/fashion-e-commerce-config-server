@@ -22,7 +22,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_user_detail:com.lamnguyen.authentication_service.event.SaveUserDetailEvent"
+              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_user_detail:com.lamnguyen.authentication_service.event.SaveProfileUserEvent"
   application:
     name: fashion-e-commerce-authentication-service
   jpa:
