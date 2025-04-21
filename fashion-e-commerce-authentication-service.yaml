@@ -80,7 +80,7 @@ application:
       expire: ${RESET_PASSWORD_EXPIRE:60}
       blacklist: ${application.token.blacklist}:${application.token.reset-password.key}
     register:
-      expire: 60
+      expire: ${EXPIRE_REGISTER_TOKEN:60}
       google:
         key: ${REGISTER_TOKEN_USING_GOOGLE:REGISTER_TOKEN_WITH_GOOGLE:TOKEN_ID_}
       facebook:
