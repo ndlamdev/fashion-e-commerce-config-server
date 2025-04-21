@@ -47,4 +47,5 @@ application:
 logging:
   level:
     org.springframework.security: trace
-    org.springframework.cloud.openfeign.FeignClient: DEBUG
+    feign: DEBUG
+    okhttp3: DEBUG
