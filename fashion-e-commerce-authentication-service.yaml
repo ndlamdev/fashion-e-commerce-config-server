@@ -77,6 +77,12 @@ application:
       default-token: ${RESET_PASSWORD_DEFAULT_VALUE:default}
       expire: ${RESET_PASSWORD_EXPIRE:60}
       blacklist: ${application.token.blacklist}:${application.token.reset-password.key}
+    register:
+      expire: 60
+      google:
+        key: ${REGISTER_TOKEN_USING_GOOGLE:REGISTER_TOKEN_WITH_GOOGLE:TOKEN_ID_}
+      facebook:
+        key: ${REGISTER_TOKEN_USING_FACEBOOK:REGISTER_TOKEN_WITH_FACEBOOK:TOKEN_ID_}
 
     otp:
       length: 6
