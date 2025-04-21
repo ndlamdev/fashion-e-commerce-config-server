@@ -82,9 +82,9 @@ application:
     register:
       expire: ${EXPIRE_REGISTER_TOKEN:60}
       google:
-        key: ${REGISTER_TOKEN_USING_GOOGLE:REGISTER_TOKEN_WITH_GOOGLE:TOKEN_ID_}
+        key: ${application.token.blacklist}:${REGISTER_TOKEN_USING_GOOGLE:REGISTER_TOKEN_WITH_GOOGLE:TOKEN_ID_}
       facebook:
-        key: ${REGISTER_TOKEN_USING_FACEBOOK:REGISTER_TOKEN_WITH_FACEBOOK:TOKEN_ID_}
+        key: ${application.token.blacklist}:${REGISTER_TOKEN_USING_FACEBOOK:REGISTER_TOKEN_WITH_FACEBOOK:TOKEN_ID_}
 
     otp:
       length: 6
