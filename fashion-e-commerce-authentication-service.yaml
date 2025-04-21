@@ -67,7 +67,7 @@ application:
       expire: ${ACCESS_TOKEN_EXPIRE:1440}
       blacklist: ${application.token.blacklist}:${application.token.access.key}
       facebook:
-        key: ${application.token.access.key}:FACEBOOK_
+        key: ${application.token.blacklist}:${application.token.access.key}:FACEBOOK_
     refresh:
       key: ${REFRESH_TOKEN_KEY:REFRESH_TOKEN}
       default-token: ${REFRESH_TOKEN_DEFAULT_VALUE:default}
