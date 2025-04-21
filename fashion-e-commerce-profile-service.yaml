@@ -37,7 +37,7 @@ spring:
             trusted:
               packages: "save_user_detail"
             type:
-              mapping: "save_user_detail:com.lamnguyen.profile_service.message.SaveProfileUserMessage"
+              mapping: "save_user_detail:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage"
   application:
     name: fashion-e-commerce-profile-service
   jpa:
