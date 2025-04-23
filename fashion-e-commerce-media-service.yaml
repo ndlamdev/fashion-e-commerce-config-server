@@ -37,7 +37,7 @@ spring:
 server:
   servlet:
     context-path: /api
-  port: 8003
+  port: 8004
 
 eureka:
   client:
@@ -52,3 +52,7 @@ application:
   white-list:
     - /greeting
   path-file-manager: ${PATH_FILE_MANAGE:D:\tai_lieu_hoc_tap\chuyen_de_web\fashion_e_commerce\resources}
+
+grpc:
+  server:
+    port: 8104
