@@ -51,3 +51,9 @@ eureka:
 application:
   white-list:
     - /greeting
+
+grpc:
+  client:
+    fashion-e-commerce-media-service:
+      enableKeepAlive: true
+      negotiationType: plaintext
