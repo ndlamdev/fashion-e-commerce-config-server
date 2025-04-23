@@ -63,3 +63,7 @@ application:
     - /v1/profile/*
     - /v1/profile/*/addresses
     - /v1/profile/*/addresses/**
+    
+grpc:
+  server:
+    port: ${GRPC_PORT:8102}
