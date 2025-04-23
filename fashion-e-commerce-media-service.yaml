@@ -18,7 +18,7 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
-      database: ${MONGO_DATABASE:fashion-e-commerce}
+      database: ${MONGO_DATABASE:media-fashion-e-commerce}
     redis:
       host: ${REDIS_HOST:localhost}
       database: ${REDIS_DATABASE:11}
