@@ -120,3 +120,9 @@ application:
           expire: ${OTP_RESET_PASSWORD_RESEND_EXPIRE:60}
       total_try: ${OTP_TOTAL_TRY:TOTAL_TRY}
       total_resend: ${OTP_TOTAL_RESEND:TOTAL_RESEND}
+
+grpc:
+  client:
+    fashion-e-commerce-profile-service:
+      enableKeepAlive: true
+      negotiationType: plaintext
