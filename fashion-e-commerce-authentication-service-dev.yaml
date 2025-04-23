@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${application.database}
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${application.database}?createDatabaseIfNotExist=true
     username: "{cipher}AYBPcj+v+FMddQf490MDnxr4Mjpt9EqVm73kWraD70Asrd1QcU+OaMBehq7NvmeuaHKjkVObvJ+iG/l4BO2rc8zeqQ7+RCQEUmkq6/0IG3Gb0D5i3CStnB8SqRCbLm/LF3YsGQAG3hjITtGsbulojYO8sUa5liC40HP/bRuig5h5nSLEqV/MFBCSuxK2NERQfGC+H5y/X5ZMZHFwr4TYxieYVu2UPDWGj4P1V1biylxKVcLVxILlf55tFAS+/5EP2/Lp2SAcCcMWF1akneHgHQijazgdFod9i3MycbRqTxhgLv0/W/KMz9D8biAv104byIzWT9SnKP2Rvk3Q63O7WJjeIYIogXwkRHGO1isB6PkNDnQVBbJLiG/meuIC66nZ+NDimtZ0oVc05g9XY1WAkEnyEudx+DJ3AkLBIvBuquk2q0h1QCj76btRRKoXlJFRi0Ek1nyfhsTTHjpMwu1CIwuVdOICN07eas2LHsh2mCtcjm2xbWRcj7bWFomMiY1H944W/Q3m8a5/aPIlroRi6XhoHfldeRJS/1Ja6JiphadXiw=="
     password: "{cipher}AYAC4cyybAqCVirupMhQuIRQSFo7yTdUkhePKMgmzQ+7fD0rZ0mQ5IhzCePVmdE+374cCUfssGqPoFsNNNQCcl9M11UZY+yvJPy+3atD7ygDqOUDFtfb4q4Ih0HV5J4R0+xrsvltojSyC3xNLtICLIvqd2H+yg5WUYZwlAPJ3t0LHvIs8bIdC6mADzPjOtDUr8klgzgn7rQKysyaOogCwMPBXTTh4Ycsc1q4CQZDIV5lsv3vkS/U5pfh1feWNtVtGvyEJEKBukII2Ei0Qlll9rMscnS7aOTI385EcQRjFii8Bl+QO9NlsI+bSsvOuCKNpnI9+pdB/jV2paluq947xB+phRHj/L8YnF5ig31jkdHYzCVNz9pcZfZfwlEIVFbYqoJDDdUUEOEp8KDII1mnOX0s+wdUhmszsbds4g5b2S0yaTyikx3jojHn7LK3lGAO+zdO+fCU+UYC/RnmB9V9GejUOYo8iD+EwDjHVxx6Mj/CtC8XUEgZiEVbrilgJyqWvMlgsT2xHhct+HvTEEIRaqY7YGGdspz8Hf8AaXUSIcb9Kw=="
     driver-class-name: ${MYSQL_DRIVER:com.mysql.cj.jdbc.Driver}
