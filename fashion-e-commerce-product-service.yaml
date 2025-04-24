@@ -7,13 +7,11 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-  #      properties:
-  #        spring:
-  #          json:
-  #            trusted:
-  #              packages: "send_mail_verify"
-  #            type:
-  #              mapping: "send_mail_verify:com.lamnguyen.notification_service.message.SendMailVerifyMessage"
+      properties:
+        spring:
+          json:
+            type:
+              mapping: "create_variant_product:com.lamnguyen.product_service.event.CreateVariantEvent"
 
   data:
     mongodb:
