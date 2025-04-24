@@ -57,3 +57,7 @@ grpc:
     fashion-e-commerce-media-service:
       enableKeepAlive: true
       negotiationType: plaintext
+    fashion-e-commerce-inventory-service:
+      enableKeepAlive: true
+      negotiationType: plaintext
+
