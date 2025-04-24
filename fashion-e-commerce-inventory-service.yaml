@@ -4,16 +4,18 @@ spring:
 
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-  #      properties:
-  #        spring:
-  #          json:
-  #            trusted:
-  #              packages: "send_mail_verify"
-  #            type:
-  #              mapping: "send_mail_verify:com.lamnguyen.notification_service.message.SendMailVerifyMessage"
+    topic:
+      create-variant: create-variant
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "create_variant_product"
+            type:
+              mapping: "create_variant_product:com.lamnguyen.inventory_service.message.CreateVariantEvent"
 
   data:
     mongodb:
