@@ -28,7 +28,7 @@ spring:
             type:
               mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
     consumer:
-      group-id: user-detail
+      group-id: profile-user
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
