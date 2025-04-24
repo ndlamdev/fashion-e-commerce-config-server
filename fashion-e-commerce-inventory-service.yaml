@@ -6,7 +6,7 @@ spring:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     topic:
       create-variant: create-variant
-    group-id: profile-user
+    group-id: inventory
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
