@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: fashion-e-commerce-inventory-service
+
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  #      properties:
+  #        spring:
+  #          json:
+  #            trusted:
+  #              packages: "send_mail_verify"
+  #            type:
+  #              mapping: "send_mail_verify:com.lamnguyen.notification_service.message.SendMailVerifyMessage"
+
+  data:
+    mongodb:
+      uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
+      database: ${MONGO_DATABASE:inventory-fashion-e-commerce}
+    redis:
+      host: ${REDIS_HOST:localhost}
+      database: ${REDIS_DATABASE:12}
+      port: ${REDIS_PORT:6379}
+      username: ${REDIS_USERNAME:}
+      password: ${REDIS_PASSWORD:}
+      timeout: ${REDIS_TIMEOUT:60000}
+      connect-timeout: ${REDIS_CONNECT_TIMEOUT:60000}
+      lettuce:
+        pool:
+          max-active: ${REDIS_MAX_POOL_ACTIVE:8}
+          max-idle: ${REDIS_MAX_POOL_IDLE:8}
+          min-idle: ${REDIS_MIN_POOL_IDLE:0}
+          max-wait: ${REDIS_MAX_POOL_WAIT:-1}
+
+server:
+  servlet:
+    context-path: /api
+  port: 8006
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_ZONE:https://eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+
+application:
+  white-list:
+    - /greeting
+
+grpc:
+  server:
+    port: 8106
