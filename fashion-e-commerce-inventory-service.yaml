@@ -14,9 +14,9 @@ spring:
         spring:
           json:
             trusted:
-              packages: "create_variant_product"
+              packages: "data_variant_product"
             type:
-              mapping: "create_variant_product:com.lamnguyen.inventory_service.message.CreateVariantEvent"
+              mapping: "data_variant_product:com.lamnguyen.inventory_service.message.DataVariantEvent"
 
   data:
     mongodb:
