@@ -13,7 +13,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "create_variant_product:com.lamnguyen.product_service.event.CreateVariantEvent"
+              mapping: "data_variant_product:com.lamnguyen.product_service.event.DataVariantEvent"
 
   data:
     mongodb:
