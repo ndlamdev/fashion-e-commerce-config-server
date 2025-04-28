@@ -9,7 +9,7 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_ZONE:https://eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka/
+      defaultZone: ${EUREKA_ZONE:https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka/
     registerWithEureka: true
     fetchRegistry: true
   instance:
