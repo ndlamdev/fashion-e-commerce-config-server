@@ -1,3 +1,9 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8004
+
+
 spring:
   application:
     name: fashion-e-commerce-media-service
@@ -34,20 +40,6 @@ spring:
           min-idle: ${REDIS_MIN_POOL_IDLE:0}
           max-wait: ${REDIS_MAX_POOL_WAIT:-1}
 
-server:
-  servlet:
-    context-path: /api
-  port: 8004
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_ZONE:https://eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka
-    fetch-registry: true
-    register-with-eureka: true
-  instance:
-    prefer-ip-address: true
-
 application:
   white-list:
     - /greeting
@@ -57,11 +49,3 @@ application:
 grpc:
   server:
     port: 8104
-
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
