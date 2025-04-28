@@ -1,1 +1,8 @@
 author: Nguyen Dinh Lam Dev
+
+application:
+  BCrypt-length: ${BCRYPT_LENGTH:16}
+  jwt:
+    iss: ${JWT_ISS:https://kimi-fashion-e-commerce.com}
+    secret-key: "{cipher}AYAwK/NJIPXnS+YLr1wCQeIh94/42h9SbRfSGA1Lx8HkY9hVQ2sye5NUeU57PN2rtgT3ECPrQXFKCnGH9mdp5PrpjDcvE0uFV+v7yfHL2ENW+N1XGVF9LTEpl/LWWLKFxnPBapLwgzdEVm/7ZYEL2jDBj4i7Zzlxe0ZG/XfvnGgOnwsmU2mKpGXP8KJAr+c5aYLe1c1IibF1I+Ftgjl3FNgznyEsNW1bz8NcIL/cx2tTAneeLtQI5pHKN+aH4kU2nSXRuVNxlhAz5p+Mzvo2xWZfGyxDa/A2+FpN6EsNFBPlyrzmJDgEBIbyGgjMs1Yq9O4LhiCPbkbcbBAnhqH9/k1kVMZ5AYpNWVu2S7V8g8h8Snkdk7rmh+CHbMNvnPAKJzRiQV8xQNVpuSO82gIaf38790uFyGVe7heiaNlesm7/Ybjfph0F1daZ87fWqOWABzqifAllGQKQh3aaYwYDNQClPe/1Tydgvhnv8+rX9S3aWafd274VciKn3PDZTVgJkuCMcg+rWaCX9OPxCo2siqGEQtsQI3wNJuDB3TrdNxP1u99gNV/Ufa5QZacQrv/VuWUoY03/9bWoiYR/imN2Augk1Cy+s1m+L3kYXEncBtzudsWGc3oWmsewkprgVdLe5Dk="
+    claim: ${JWT_CLAIM:payload}
