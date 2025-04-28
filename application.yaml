@@ -1,17 +1,7 @@
-# author: Nguyen Dinh Lam
+author: Nguyen Dinh Lam
 
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: "*"
-
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: ${EUREKA_ZONE:https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka/
-#     registerWithEureka: true
-#     fetchRegistry: true
-#   instance:
-#     preferIpAddress: true
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
