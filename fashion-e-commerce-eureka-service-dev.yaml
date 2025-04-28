@@ -1,6 +1,6 @@
 spring:
   security:
     user:
-      name: lamnguyen1305
+      name: eurekaserveradmin
       password: "$2a$10$nk6/pxwQ0GoFJXn5ZgxXn.uX5odCKmyFzo7rlq5st7NSXPT5Z5wH."
       roles: ADMIN
