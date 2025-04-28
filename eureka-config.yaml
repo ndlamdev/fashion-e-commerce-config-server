@@ -3,7 +3,7 @@ author: Nguyen Dinh Lam Dev
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
+      defaultZone: https://eurekaserveradmin:LamNguyen@1305@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
     registerWithEureka: true
     fetchRegistry: true
   instance:
