@@ -126,9 +126,3 @@ grpc:
     fashion-e-commerce-profile-service:
       enableKeepAlive: true
       negotiationType: plaintext
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
