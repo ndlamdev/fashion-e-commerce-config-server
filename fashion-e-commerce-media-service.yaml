@@ -51,7 +51,7 @@ eureka:
 application:
   white-list:
     - /greeting
-    - /resource/v1/**
+    - /resource/images/**
   path-file-manager: ${PATH_FILE_MANAGE:D:\tai_lieu_hoc_tap\chuyen_de_web\fashion_e_commerce\resources}
 
 grpc:
