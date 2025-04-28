@@ -59,3 +59,10 @@ application:
 grpc:
   server:
     port: 8106
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
