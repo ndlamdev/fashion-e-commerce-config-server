@@ -1,1 +1,7 @@
 author: Nguyen Dinh Lam
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
