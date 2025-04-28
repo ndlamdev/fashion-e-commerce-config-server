@@ -14,7 +14,7 @@ application:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://${application.eureka.username}:${application.eureka.password}eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
+      defaultZone: https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
     registerWithEureka: true
     fetchRegistry: true
   instance:
