@@ -1,21 +1,21 @@
-author: Nguyen Dinh Lam Dev
+# author: Nguyen Dinh Lam Dev
 
-application:
-  BCrypt-length: ${BCRYPT_LENGTH:16}
-  jwt:
-    iss: ${JWT_ISS:https://kimi-fashion-e-commerce.com}
-    secret-key: "{cipher}AYAwK/NJIPXnS+YLr1wCQeIh94/42h9SbRfSGA1Lx8HkY9hVQ2sye5NUeU57PN2rtgT3ECPrQXFKCnGH9mdp5PrpjDcvE0uFV+v7yfHL2ENW+N1XGVF9LTEpl/LWWLKFxnPBapLwgzdEVm/7ZYEL2jDBj4i7Zzlxe0ZG/XfvnGgOnwsmU2mKpGXP8KJAr+c5aYLe1c1IibF1I+Ftgjl3FNgznyEsNW1bz8NcIL/cx2tTAneeLtQI5pHKN+aH4kU2nSXRuVNxlhAz5p+Mzvo2xWZfGyxDa/A2+FpN6EsNFBPlyrzmJDgEBIbyGgjMs1Yq9O4LhiCPbkbcbBAnhqH9/k1kVMZ5AYpNWVu2S7V8g8h8Snkdk7rmh+CHbMNvnPAKJzRiQV8xQNVpuSO82gIaf38790uFyGVe7heiaNlesm7/Ybjfph0F1daZ87fWqOWABzqifAllGQKQh3aaYwYDNQClPe/1Tydgvhnv8+rX9S3aWafd274VciKn3PDZTVgJkuCMcg+rWaCX9OPxCo2siqGEQtsQI3wNJuDB3TrdNxP1u99gNV/Ufa5QZacQrv/VuWUoY03/9bWoiYR/imN2Augk1Cy+s1m+L3kYXEncBtzudsWGc3oWmsewkprgVdLe5Dk="
-    claim: ${JWT_CLAIM:payload}
+# application:
+#   BCrypt-length: ${BCRYPT_LENGTH:16}
+#   jwt:
+#     iss: ${JWT_ISS:https://kimi-fashion-e-commerce.com}
+#     secret-key: "{cipher}AYAwK/NJIPXnS+YLr1wCQeIh94/42h9SbRfSGA1Lx8HkY9hVQ2sye5NUeU57PN2rtgT3ECPrQXFKCnGH9mdp5PrpjDcvE0uFV+v7yfHL2ENW+N1XGVF9LTEpl/LWWLKFxnPBapLwgzdEVm/7ZYEL2jDBj4i7Zzlxe0ZG/XfvnGgOnwsmU2mKpGXP8KJAr+c5aYLe1c1IibF1I+Ftgjl3FNgznyEsNW1bz8NcIL/cx2tTAneeLtQI5pHKN+aH4kU2nSXRuVNxlhAz5p+Mzvo2xWZfGyxDa/A2+FpN6EsNFBPlyrzmJDgEBIbyGgjMs1Yq9O4LhiCPbkbcbBAnhqH9/k1kVMZ5AYpNWVu2S7V8g8h8Snkdk7rmh+CHbMNvnPAKJzRiQV8xQNVpuSO82gIaf38790uFyGVe7heiaNlesm7/Ybjfph0F1daZ87fWqOWABzqifAllGQKQh3aaYwYDNQClPe/1Tydgvhnv8+rX9S3aWafd274VciKn3PDZTVgJkuCMcg+rWaCX9OPxCo2siqGEQtsQI3wNJuDB3TrdNxP1u99gNV/Ufa5QZacQrv/VuWUoY03/9bWoiYR/imN2Augk1Cy+s1m+L3kYXEncBtzudsWGc3oWmsewkprgVdLe5Dk="
+#     claim: ${JWT_CLAIM:payload}
   
-  eureka:
-    username: "{cipher}AYBLcDXoNRW9df4bBJVLYEaH3Iw5JJaUIg9QjQgxW7OhqV7vyVkITCzb5qVcnpDMEvt0aqFu/exUYu+edMVOZE8axhvUadVqkNUs01OVbXGexXhBbTSwVMwUJr+lXFCaQGPy/O2D4hkTt6e49mmsmj6Dt0LqFW96zrgW0Dm0UpJkiQTJa/wAZoVXc3dzSAAHDDqFr/ouBEtCI3geoRu8MdRvHirKa9Z6bWHn/Eh8xnfa86jL5VUEri+PuLxoXpmj/uHKEIMVDSmdPjyosnR8s8JbgXl9wMBB9UJOxo9m22m+sEmeCX8FGiJeD+Bx/svuTk4zq96OuxBACUTcZOZeor3/AqNPc0COo892YZpnXGTTm+dLWdbpOGY9Edx2mASLWNShQfq6xqX7kaUfGiQW5ryIv1benNhse6hueJTxVJuTIBMMLdBVr9ocK584p0jC9rjlmasKQ07SxoAMDwsnjLvmzfxHwVfH5SWhsJUb4p2+DlO1xO5z9TkoeZBadrPPTBeHV0IvG6U7y5eJOwCanLwYIV0iY47cKoJP/sfolSUHtDDR739RdvUk8Dm18tL4YlI="
-    password: "{cipher}AYAhFn9OC8f1rHNM44RTnYHnBWukwPsXKb6p6VDAJfP1d4n5D4404t3yteGEvO1IQpYKqlSd/5Ovvs/uR6+o1QcuHUnSbN8JnsoijyI10n/1jVXeLlx/d2ULPBrksKhptaI97PbS/gRrVCe9F6rCaexcKhF6wvOzHKoxggbVZS9N+kqBziKY6IcTJmPZ/J4w4qpXY1Gf0oGWMOsyvDIyMTP4foGwir9O1WyeuqNdRJR9WqXoqKa8pqis9XppgOc+sO+4Vsc07TfGEhbNEGWBLKTKx18lL/fvppIQMQHo/kdip5Z7957IncjWwuJp1HOEaYScnejK8+G8sEjX30GjahUH9fPdca+AxuYf/DCZL68LJrwvxm8zp1QmTi/iT7PS9mA5closbg94POXSdF3KFq96NNUIZnr6tRYym9ymWf7oBED4aAImr6523iZ0KBEspufnJX3snvtCUFMr9gwenUVH/FE6vWpp+39Y3vIzgQVaZwCEsxJLk3dRzw3Ipztuo0F3hhyZ8at7ZJKMjEJRSjpp0jEH8q7jlxbpRC5EIKWvgw=="
+#   eureka:
+#     username: "{cipher}AYBLcDXoNRW9df4bBJVLYEaH3Iw5JJaUIg9QjQgxW7OhqV7vyVkITCzb5qVcnpDMEvt0aqFu/exUYu+edMVOZE8axhvUadVqkNUs01OVbXGexXhBbTSwVMwUJr+lXFCaQGPy/O2D4hkTt6e49mmsmj6Dt0LqFW96zrgW0Dm0UpJkiQTJa/wAZoVXc3dzSAAHDDqFr/ouBEtCI3geoRu8MdRvHirKa9Z6bWHn/Eh8xnfa86jL5VUEri+PuLxoXpmj/uHKEIMVDSmdPjyosnR8s8JbgXl9wMBB9UJOxo9m22m+sEmeCX8FGiJeD+Bx/svuTk4zq96OuxBACUTcZOZeor3/AqNPc0COo892YZpnXGTTm+dLWdbpOGY9Edx2mASLWNShQfq6xqX7kaUfGiQW5ryIv1benNhse6hueJTxVJuTIBMMLdBVr9ocK584p0jC9rjlmasKQ07SxoAMDwsnjLvmzfxHwVfH5SWhsJUb4p2+DlO1xO5z9TkoeZBadrPPTBeHV0IvG6U7y5eJOwCanLwYIV0iY47cKoJP/sfolSUHtDDR739RdvUk8Dm18tL4YlI="
+#     password: "{cipher}AYAhFn9OC8f1rHNM44RTnYHnBWukwPsXKb6p6VDAJfP1d4n5D4404t3yteGEvO1IQpYKqlSd/5Ovvs/uR6+o1QcuHUnSbN8JnsoijyI10n/1jVXeLlx/d2ULPBrksKhptaI97PbS/gRrVCe9F6rCaexcKhF6wvOzHKoxggbVZS9N+kqBziKY6IcTJmPZ/J4w4qpXY1Gf0oGWMOsyvDIyMTP4foGwir9O1WyeuqNdRJR9WqXoqKa8pqis9XppgOc+sO+4Vsc07TfGEhbNEGWBLKTKx18lL/fvppIQMQHo/kdip5Z7957IncjWwuJp1HOEaYScnejK8+G8sEjX30GjahUH9fPdca+AxuYf/DCZL68LJrwvxm8zp1QmTi/iT7PS9mA5closbg94POXSdF3KFq96NNUIZnr6tRYym9ymWf7oBED4aAImr6523iZ0KBEspufnJX3snvtCUFMr9gwenUVH/FE6vWpp+39Y3vIzgQVaZwCEsxJLk3dRzw3Ipztuo0F3hhyZ8at7ZJKMjEJRSjpp0jEH8q7jlxbpRC5EIKWvgw=="
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
-    registerWithEureka: true
-    fetchRegistry: true
-  instance:
-    preferIpAddress: true
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: https://${application.eureka.username}:${application.eureka.password}@eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server/eureka/
+#     registerWithEureka: true
+#     fetchRegistry: true
+#   instance:
+#     preferIpAddress: true
