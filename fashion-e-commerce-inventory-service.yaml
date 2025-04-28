@@ -43,15 +43,6 @@ server:
     context-path: /api
   port: 8006
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_ZONE:https://eureka-server.ndlamdev.website/fashion-e-commerce-eureka-server}/eureka
-    fetch-registry: true
-    register-with-eureka: true
-  instance:
-    prefer-ip-address: true
-
 application:
   white-list:
     - /greeting
@@ -59,10 +50,3 @@ application:
 grpc:
   server:
     port: 8106
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
