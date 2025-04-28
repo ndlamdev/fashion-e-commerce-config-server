@@ -67,3 +67,10 @@ application:
 grpc:
   server:
     port: ${GRPC_PORT:8102}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
