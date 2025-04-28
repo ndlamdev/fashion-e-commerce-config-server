@@ -62,3 +62,9 @@ grpc:
       enableKeepAlive: true
       negotiationType: plaintext
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
