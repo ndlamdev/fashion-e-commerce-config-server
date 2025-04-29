@@ -2,5 +2,5 @@ spring:
   security:
     user:
       name: eurekaserveradmin
-      password: "$2a$10$nk6/pxwQ0GoFJXn5ZgxXn.uX5odCKmyFzo7rlq5st7NSXPT5Z5wH."
+      password: "{cipher}AYAQjC8KwX8/QWolZk4SeVGwS0FuXJInybz+3bj5T8IY54w1DcpXRTXzeH8Wgfw0UjhOXC+Xa/vC2v2WVSYCD/Zf9907AT/P+21i1dH0w1C9fkWhKUdar9svCbCQ8/X682FXHkiCVyti1aDFHj3wje8In4gmtrIQqmhkip1/EL3UHJ7/qfdP0PDiYCjPJ09Tl43jQvsDB7HP8KOkkj9M2ONBxuimBiIyB0jlKH00T0xXSZHQBFvC10rhdI7FwcEWdxyDZjqmgZBxPHRvVDapUoPGTLViUlg5YxOmC8jte1+vFj3pHamBud/3zt06HEdERs4t1vUSUAtm7C9lqaIpimUfipZs2i+FZii3aqRyTjQzOnRkTFtjnQZu+Zaj3T3OrjRHf12Z8nzjy6l1hlWu27Zd1HoatJbHUX4XSZ8wihJqiLf3ZlqjQNZSBtC4b1TVrXc/rCopv4l/NfiWcHiJhPULI9jLg0Uv5AAh0ACNGvXssfY3ZNe0TvWOvHlp+TAGyKuDCXmLqgHupRqTiZorLmu94a0sPh4hVpHK6qfzfx+fDR08argFPXli7F7aDqsKypUoKM9SkqKb94lMHKF9LM1V1dLvExjVJ+jg2ZwJxH4Bvw=="
       roles: ADMIN
