@@ -4,7 +4,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, prometheus, metrics
+        include: health, info, loggers, prometheus, metrics, trace
   metrics:
     export:
       prometheus:
