@@ -49,4 +49,4 @@ application:
 
 grpc:
   server:
-    port: 8106
+    port: 8105
