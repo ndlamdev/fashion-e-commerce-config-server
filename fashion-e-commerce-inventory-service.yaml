@@ -24,25 +24,6 @@ spring:
             type:
               mapping: "data_variant_product:com.lamnguyen.inventory_service.message.DataVariantEvent"
 
-  data:
-    mongodb:
-      uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
-      database: ${MONGO_DATABASE:inventory-fashion-e-commerce}
-    redis:
-      host: ${REDIS_HOST:localhost}
-      database: ${REDIS_DATABASE:12}
-      port: ${REDIS_PORT:6379}
-      username: ${REDIS_USERNAME:}
-      password: ${REDIS_PASSWORD:}
-      timeout: ${REDIS_TIMEOUT:60000}
-      connect-timeout: ${REDIS_CONNECT_TIMEOUT:60000}
-      lettuce:
-        pool:
-          max-active: ${REDIS_MAX_POOL_ACTIVE:8}
-          max-idle: ${REDIS_MAX_POOL_IDLE:8}
-          min-idle: ${REDIS_MIN_POOL_IDLE:0}
-          max-wait: ${REDIS_MAX_POOL_WAIT:-1}
-
 application:
   white-list:
     - /greeting
