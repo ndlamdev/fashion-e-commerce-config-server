@@ -6,6 +6,8 @@ server:
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
+    topic:
+      create-cart: create-cart
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
@@ -13,7 +15,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_profile:com.lamnguyen.authentication_service.event.SaveProfileUserEvent,update_avatar_user:com.lamnguyen.authentication_service.event.UpdateAvatarUserEvent"
+              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_profile:com.lamnguyen.authentication_service.event.SaveProfileUserEvent,update_avatar_user:com.lamnguyen.authentication_service.event.UpdateAvatarUserEvent,create_cart:com.lamnguyen.authentication_service.event.CreateCartEvent"
   application:
     name: fashion-e-commerce-authentication-service
   jpa:
