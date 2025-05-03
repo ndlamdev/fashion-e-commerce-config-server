@@ -15,7 +15,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_profile:com.lamnguyen.authentication_service.event.SaveProfileUserEvent,update_avatar_user:com.lamnguyen.authentication_service.event.UpdateAvatarUserEvent,create_cart:com.lamnguyen.authentication_service.event.CreateCartEvent"
+              mapping: "send_mail_verify:com.lamnguyen.authentication_service.event.SendMailVerifyEvent,save_profile:com.lamnguyen.authentication_service.event.SaveProfileUserEvent,update_avatar_user:com.lamnguyen.authentication_service.event.UpdateAvatarUserEvent"
   application:
     name: fashion-e-commerce-authentication-service
   jpa:
