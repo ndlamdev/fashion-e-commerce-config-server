@@ -18,6 +18,3 @@ spring:
           max-idle: ${REDIS_MAX_POOL_IDLE:8}
           min-idle: ${REDIS_MIN_POOL_IDLE:0}
           max-wait: ${REDIS_MAX_POOL_WAIT:-1}
-application:
-  database: ${MYSQL_DATABASE:inventory_fashion_e_commerce}
-  
