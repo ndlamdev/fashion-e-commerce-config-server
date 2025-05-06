@@ -56,3 +56,10 @@ application:
 grpc:
   server:
     port: ${GRPC_PORT:8106}
+  client:
+    fashion-e-commerce-product-service:
+      enableKeepAlive: true
+      negotiationType: plaintext
+    fashion-e-commerce-inventory-service:
+      enableKeepAlive: true
+      negotiationType: plaintext
