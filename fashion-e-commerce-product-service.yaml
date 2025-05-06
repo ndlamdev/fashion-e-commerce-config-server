@@ -31,6 +31,8 @@ application:
     - /greeting
 
 grpc:
+  server:
+    port: 8103
   client:
     fashion-e-commerce-media-service:
       enableKeepAlive: true
