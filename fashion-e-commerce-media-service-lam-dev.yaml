@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
+      uri: mongodb://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}?maxPoolSize=150&minPoolSize=30&waitQueueTimeoutMS=5000&connectTimeoutMS=10000&socketTimeoutMS=30000
       database: ${MONGO_DATABASE:media-fashion-e-commerce}
       auto-index-creation: true
       username: "{cipher}AYBZjnlN3KfasxhvVBnArKe+0Jae4KllrDsVeaMcH5OUmopuneZYecTY9EBigoQEeq1usVXZusVuoMDzqlLjckojJJdGYJKC473HwOPuUgvc1vQ83BS3W4fIZA9eRd5/b7YKNPl7+V5GxFmeHy/zUFdRjB31n0sKlgbW3qNhcTN8PsPTcVUy7LNzm+80SmQotAFMNqkE5wUxVTy67bOat9Xmpy6JzSPB98bLVLTQg+O6v2I988ZuZlHpe5E0jqfAqZ3lfWj3NEyK3FnwhciCFFsngL+Gjv+a0Y6Pgb49UF+k60GUCeC6HiFVYbP5b2q1kyCo0FWzRQhnAi8vapOn+9/nqnIcecbFhs3ksphO9gUTxFpOXbA5VY4MDybcYH8DLQiZrTVjLd26m4b/34GOR1WDlWVhjQtsjMGVUCUcstNbtIzc3tTRhUqkCRJD9jSbv2JDC8sWtWERcVKWU+kJri5d2CeIT3WjVKnuziRWTr/FPTBUle/d1ibxuG3E/aeRVKAM8VAiXNcOwK4aLYbDLMuIZ4htF/UuEwrRLDViyQyPPg=="
