@@ -1,0 +1,2 @@
+application:
+  path-file-manager: ${PATH_FILE_MANAGE:/home/karkato/Downloads/resources}
