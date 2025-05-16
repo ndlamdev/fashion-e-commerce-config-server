@@ -1,8 +1,7 @@
 server:
   port: 8888
   servlet:
-    context-path: /fashion-e-commerce
-
+    context-path: /kimi-fashion
 
 spring:
   application:
@@ -13,23 +12,76 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: authentication-service-white-list
+        - id: authentication-service-whitelist
           uri: lb://FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/auth/**,
-              ${server.servlet.context-path}/api/authentication-service/**
+            - Path=${server.servlet.context-path}/api/auth/**, ${server.servlet.context-path}/api/authentication-service/**
           filters:
             - StripPrefix=1
 
         - id: authentication-service-black-list
           uri: lb://FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/role/**,
-              ${server.servlet.context-path}/api/authorization/**
+            - Path=${server.servlet.context-path}/api/role/**, ${server.servlet.context-path}/api/authorization/**
           filters:
             - StripPrefix=1
             - name: Authentication
-              args:
-                baseMessage: Process Authentication Filter
-                preAuth: true
-                postAuth: true
+
+        - id: authentication-service-product-whitelist
+          uri: lb://FASHION-E-COMMERCE-PRODUCT-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/product/**, ${server.servlet.context-path}/api/collection/**, ${server.servlet.context-path}/api/product-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-product-blacklist
+          uri: lb://FASHION-E-COMMERCE-PRODUCT-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/admin/product/**, ${server.servlet.context-path}/api/admin/collection/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-cart-whitelist
+          uri: lb://FASHION-E-COMMERCE-CART-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/cart-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-cart-backlist
+          uri: lb://FASHION-E-COMMERCE-CART-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/cart/**
+          filters:
+            - StripPrefix=1
+            - name: Authentication
+
+        - id: authentication-service-media-whitelist
+          uri: lb://FASHION-E-COMMERCE-MEDIA-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/media-service/**, ${server.servlet.context-path}/api/resource/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-media-backlist
+          uri: lb://FASHION-E-COMMERCE-MEDIA-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/media/**
+          filters:
+            - StripPrefix=1
+            - name: Authentication
+
+        - id: authentication-service-profile-whitelist
+          uri: lb://FASHION-E-COMMERCE-PROFILE-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/profile-service/**, ${server.servlet.context-path}/api/profile/**, ${server.servlet.context-path}/api/address/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-profile-backlist
+          uri: lb://FASHION-E-COMMERCE-PROFILE-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/admin/profile/**, ${server.servlet.context-path}/api/admin/address/**
+          filters:
+            - StripPrefix=1
+            - name: Authentication
