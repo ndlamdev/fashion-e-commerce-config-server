@@ -8,6 +8,9 @@ spring:
     name: fashion-e-commerce-api-gateway-service
   cloud:
     gateway:
+      httpclient:
+        connect-timeout: 10000  # 10 giây
+        response-timeout: 15s   # 15 giây
       discovery:
         locator:
           enabled: true
