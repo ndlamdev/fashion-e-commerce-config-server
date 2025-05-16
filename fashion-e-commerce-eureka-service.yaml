@@ -9,7 +9,7 @@ server:
 
 eureka:
   server:
-    eviction-interval-timer-in-ms: 5000
+    eviction-interval-timer-in-ms: 30000
     enable-self-preservation: false
   instance:
     hostname: localhost
