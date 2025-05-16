@@ -1,8 +1,3 @@
-server:
-  port: 8888
-  servlet:
-    context-path: /kimi-fashion
-
 spring:
   application:
     name: fashion-e-commerce-api-gateway-service
@@ -19,7 +14,7 @@ spring:
           filters:
             - StripPrefix=1
 
-        - id: authentication-service-black-list
+        - id: authentication-service-blacklist
           uri: lb://FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
           predicates:
             - Path=${server.servlet.context-path}/api/role/**, ${server.servlet.context-path}/api/authorization/**
