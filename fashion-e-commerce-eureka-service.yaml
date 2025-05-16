@@ -8,10 +8,11 @@ server:
     context-path: "{cipher}AYAA+wlvlM6CLbGgjvDdZur4sd6qu5bokE+vu11IMBC4GnUB2z5ToHVp3gFkyPrISUsdpSGjh0B9LJJXUREwscG67EOMp6NQs+sIUAmb452lAdgCBYW8zE2CiU8DpzZbY15PeWauKY+VXOBJEUT0kHo8zLeVoHQcBiEUzA43hfpN2ITy/DWUPiTi1ffycK+7GqhwSr8cR50Kcgcx1ulT+VMkpiogvUln2ai6cA4A87QF2OziWK0W2AwCWTTyoSk+wfZJAEJOmTZb7haMt+8Lc+Wv73Eq+hPxXfqqEvhHGCDBWp4cIoDJ9wAy9JJA/maQoWSMben5aGxLiLSMVKBi+vmFYau4aM1zinyN13/ThfF/NZBHwe9LPZDCF0rWPTJ/kh6Y9zVGcdQbn1WNHcRKebFog+3KfSSPuPCBkeNBpjCCzvX7ietVLa3uUei4Xiv1Vh0/f6kz6tamTob0hEkcBubM5fISidffhaf0VgxNCrVN0F7iIq+PASZW7OPSpZ2qlCGjlyQMbXlJnqXlxtHpAbhz1DxEGQF2osHhR3Y7zD9QhTfR8RADOzkonLq28KexPHYVxoQKCUzZENqrMW6dYSLz"
 
 eureka:
+  server:
+    eviction-interval-timer-in-ms: 5000
+    enable-self-preservation: false
   instance:
     hostname: localhost
-    lease-renewal-interval-in-seconds: 10
-    lease-expiration-duration-in-seconds: 15
   client:
     registerWithEureka: false
     fetchRegistry: false
