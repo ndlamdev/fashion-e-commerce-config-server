@@ -8,5 +8,3 @@ eureka:
     fetchRegistry: true
   instance:
     preferIpAddress: true
-    lease-renewal-interval-in-seconds: 10
-    lease-expiration-duration-in-seconds: 15
