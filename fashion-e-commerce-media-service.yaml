@@ -34,7 +34,7 @@ application:
   white-list:
     - /greeting
     - /resource/images/**
-  path-file-manager: ${PATH_FILE_MANAGE:D:\tai_lieu_hoc_tap\chuyen_de_web\fashion_e_commerce\resources}
+  path-file-manager: ${PATH_FILE_MANAGE:C:\Users\Administrator\Downloads\resources}
 
 grpc:
   server:
