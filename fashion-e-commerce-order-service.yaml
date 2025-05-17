@@ -4,27 +4,28 @@ server:
   port: 8006
 
 spring:
-  # kafka:
-  #   bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
-  #   producer:
-  #     key-serializer: org.apache.kafka.common.serialization.StringSerializer
-  #     value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-  #     properties:
-  #       spring:
-  #         json:
-  #           type:
-  #             mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
-  #   consumer:
-  #     group-id: order-service
-  #     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-  #     value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-  #     properties:
-  #       spring:
-  #         json:
-  #           trusted:
-  #             packages: "save_user_detail"
-  #           type:
-  #             mapping: "save_profile:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage"
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
+    base-topic: order-base-topic
+    # producer:
+    #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #   value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    #   properties:
+    #     spring:
+    #       json:
+    #         type:
+    #           mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
+    # consumer:
+    #   group-id: order-service
+    #   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #   value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    #   properties:
+    #     spring:
+    #       json:
+    #         trusted:
+    #           packages: "save_user_detail"
+    #         type:
+    #           mapping: "save_profile:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage"
   
   application:
     name: fashion-e-commerce-order-service
