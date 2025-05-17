@@ -1,8 +1,7 @@
 server:
   servlet:
     context-path: /api
-  port: 8006
-
+  port: 8007
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
@@ -53,4 +52,4 @@ application:
     
 grpc:
   server:
-    port: ${GRPC_PORT:8106}
+    port: ${GRPC_PORT:8107}
