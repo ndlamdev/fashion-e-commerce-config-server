@@ -1,0 +1,55 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8008
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
+    topic:
+      base-topic: payment-base-topic
+    # producer:
+    #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #   value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    #   properties:
+    #     spring:
+    #       json:
+    #         type:
+    #           mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
+    # consumer:
+    #   group-id: payment-service
+    #   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #   value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    #   properties:
+    #     spring:
+    #       json:
+    #         trusted:
+    #           packages: "save_user_detail"
+    #         type:
+    #           mapping: "save_profile:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage"
+  
+  application:
+    name: fashion-e-commerce-payment-service
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: ${SHOW_SQL:true}
+    properties:
+      hibernate:
+        format_sql: ${HIBERNATE_FORMAT_SQL:true}
+  flyway:
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    schemas: ${application.database}
+    url: ${spring.datasource.url}
+    locations: classpath:db/migration
+  jackson:
+    mapper:
+      sort-properties-alphabetically: false
+
+application:
+  white-list:
+    - /greeting
+    
+grpc:
+  server:
+    port: ${GRPC_PORT:8108}
