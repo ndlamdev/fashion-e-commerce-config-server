@@ -49,6 +49,8 @@ spring:
 application:
   white-list:
     - /greeting
+    - /order/v1/cancel
+    - /order/v1/pay-success
     
 grpc:
   server:
