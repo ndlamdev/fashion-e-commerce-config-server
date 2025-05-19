@@ -8,6 +8,7 @@ spring:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     topic:
       create-cart: create-cart
+      delete-cart-items: delete-cart-items
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
@@ -26,7 +27,7 @@ spring:
             trusted:
               packages: "create_cart"
             type:
-              mapping: "create_cart:com.lamnguyen.cart_service.message.CreateCartMessage"
+              mapping: "create_cart:com.lamnguyen.cart_service.message.CreateCartMessage,delete_cart_items:com.lamnguyen.cart_service.message.DeleteCartItemsMessage"
   application:
     name: fashion-e-commerce-profile-service
   jpa:
