@@ -48,7 +48,8 @@ spring:
 
 application:
   white-list:
-    - /greeting
+    - /actuator/**
+    - /order-service/greeting
     - /order/v1/cancel
     - /order/v1/pay-success
     
