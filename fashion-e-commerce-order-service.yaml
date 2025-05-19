@@ -63,6 +63,6 @@ grpc:
     fashion-e-commerce-inventory-service:
       enableKeepAlive: true
       negotiationType: plaintext
-    fashion-e-commerce-payment-search-service:
+    fashion-e-commerce-payment-service:
       enableKeepAlive: true
       negotiationType: plaintext
