@@ -26,10 +26,3 @@ spring:
 
 application:
   database: ${MYSQL_DATABASE:order_fashion_e_commerce}
-  payos:
-    client-id: ${PAYOS_API_KEY:}
-    api-key: ${PAYOS_API_KEY:}
-    checksum-key: ${PAYOS_CHECKSUM_KEY:}
-    key:
-      private-key: ${PRIVATE_KEY:}
-      public-key: ${PUBLIC_KEY:}
