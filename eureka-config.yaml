@@ -9,4 +9,4 @@ eureka:
   instance:
     prefer-Ip-Address: true
     preferIpAddress: true
-    ip-address: ${MY_SERVICE_IP}
+    ip-address: ${MY_SERVICE_IP:}
