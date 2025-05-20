@@ -49,10 +49,7 @@ spring:
 
 application:
   white-list:
-    - /greeting
-    - /v1/profile/*
-    - /v1/profile/*/addresses
-    - /v1/profile/*/addresses/**
+    - /cart-service/greeting
     
 grpc:
   server:
