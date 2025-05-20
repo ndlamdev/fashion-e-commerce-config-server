@@ -29,7 +29,7 @@ spring:
             type:
               mapping: "create_cart:com.lamnguyen.cart_service.message.CreateCartMessage,delete_cart_items:com.lamnguyen.cart_service.message.DeleteCartItemsMessage"
   application:
-    name: fashion-e-commerce-profile-service
+    name: fashion-e-commerce-cart-service
   jpa:
     hibernate:
       ddl-auto: none
