@@ -7,6 +7,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
   instance:
-    prefer-Ip-Address: true
-    preferIpAddress: true
+    prefer-Ip-Address: ${PREFER_IP_ADDRESS:true}
+    preferIpAddress: ${PREFER_IP_ADDRESS:true}
     ip-address: ${MY_SERVICE_IP:127.0.0.1}
+    hostname: ${EUREKA_CLIENT_HOSTNAME:localhost}
