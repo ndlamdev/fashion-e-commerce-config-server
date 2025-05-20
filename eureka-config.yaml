@@ -7,5 +7,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
   instance:
-    prefer-ip-address: true
+    prefer-Ip-Address: true
     preferIpAddress: true
