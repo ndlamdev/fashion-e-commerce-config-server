@@ -46,10 +46,8 @@ spring:
 
 application:
   white-list:
-    - /greeting
-    - /profile/v1/*
-    - /profile/v1/*/addresses
-    - /profile/v1/*/addresses/**
+    - /profile-service/greeting
+    
     
 grpc:
   server:
