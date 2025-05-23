@@ -16,10 +16,10 @@ spring:
           json:
             type:
               mapping: "delete_cart_items:com.lamnguyen.order_service.event.DeleteCartItemsEvent"
-    # consumer:
-    #   group-id: order-service
-    #   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    #   value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    consumer:
+      group-id: order-service
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     #   properties:
     #     spring:
     #       json:
