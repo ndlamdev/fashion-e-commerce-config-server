@@ -108,3 +108,18 @@ spring:
           filters:
             - StripPrefix=1
             - name: Authentication
+
+        - id: authentication-service-payment-whitelist
+          uri: lb://FASHION-E-COMMERCE-PAYMENT-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/payment-service/**, ${server.servlet.context-path}/api/payment/**
+          filters:
+            - StripPrefix=1
+
+        - id: authentication-service-payment-backlist
+          uri: lb://FASHION-E-COMMERCE-PAYMENT-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/admin/payment/**
+          filters:
+            - StripPrefix=1
+            - name: Authentication
