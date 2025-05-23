@@ -6,7 +6,7 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     topic:
-      base-topic: payment-base-topic
+      delete-order: delete-order
     # producer:
     #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
     #   value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
