@@ -37,6 +37,7 @@ spring:
 
 application:
   white-list:
+    - /${spring.application.name}/actuator/**
     - ${application.login-path}
     - /auth/v1/register
     - /auth/v1/logout
