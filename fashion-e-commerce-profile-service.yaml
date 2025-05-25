@@ -46,6 +46,7 @@ spring:
 
 application:
   white-list:
+    - /${spring.application.name}/actuator/**
     - /profile-service/greeting
     
     
