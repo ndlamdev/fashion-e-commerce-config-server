@@ -75,7 +75,7 @@ spring:
             - StripPrefix=1
             - name: Authentication
 
-         - id: authentication-service-inventory-whitelist
+        - id: authentication-service-inventory-whitelist
           uri: lb://FASHION-E-COMMERCE-INVENTORY-SERVICE
           predicates:
             - Path=${server.servlet.context-path}/api/inventory-service/**, ${server.servlet.context-path}/api/fashion-e-commerce-inventory-service/**
