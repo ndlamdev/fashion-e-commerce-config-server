@@ -8,17 +8,6 @@ cors:
     - http://localhost:5173
     - https://localhost_5173.ndlamdev.website
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, info, loggers, prometheus, metrics, trace
-      base-path: /${server.servlet.context-path}/${spring.application.name}/actuator
-  metrics:
-    export:
-      prometheus:
-        enabled: true
-
 spring:
   application:
     name: fashion-e-commerce-api-gateway-service
