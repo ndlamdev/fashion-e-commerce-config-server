@@ -1,10 +1,8 @@
 server:
+  servlet:
+    context-path: /api
   port: 8000
 
-management:
-  endpoints:
-    web:
-      base-path: /api/${spring.application.name}/actuator
 
 spring:
   application:
