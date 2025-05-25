@@ -30,7 +30,7 @@ spring:
 application:
   white-list:
     - /${spring.application.name}/actuator/**
-    - /greeting
+    - /product-service/greeting
 
 grpc:
   server:
