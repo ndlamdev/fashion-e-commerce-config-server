@@ -23,7 +23,7 @@ spring:
         - id: authentication-service-whitelist
           uri: lb://FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/auth/**, ${server.servlet.context-path}/api/authentication-service/**
+            - Path=${server.servlet.context-path}/api/auth/**, ${server.servlet.context-path}/api/authentication-service/**, ${server.servlet.context-path}/api/fashion-e-commerce-authentication-service/**
           filters:
             - StripPrefix=1
 
@@ -38,7 +38,7 @@ spring:
         - id: authentication-service-product-whitelist
           uri: lb://FASHION-E-COMMERCE-PRODUCT-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/product/**, ${server.servlet.context-path}/api/collection/**, ${server.servlet.context-path}/api/product-service/**
+            - Path=${server.servlet.context-path}/api/product/**, ${server.servlet.context-path}/api/collection/**, ${server.servlet.context-path}/api/product-service/**, ${server.servlet.context-path}/api/fashion-e-commerce-product-service/**
           filters:
             - StripPrefix=1
 
@@ -59,7 +59,7 @@ spring:
         - id: authentication-service-cart-backlist
           uri: lb://FASHION-E-COMMERCE-CART-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/cart/**
+            - Path=${server.servlet.context-path}/api/cart/**, ${server.servlet.context-path}/api/fashion-e-commerce-cart-service/**
           filters:
             - StripPrefix=1
             - name: Authentication
@@ -67,7 +67,7 @@ spring:
         - id: authentication-service-media-whitelist
           uri: lb://FASHION-E-COMMERCE-MEDIA-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/media-service/**, ${server.servlet.context-path}/api/resource/**
+            - Path=${server.servlet.context-path}/api/media-service/**, ${server.servlet.context-path}/api/resource/**, ${server.servlet.context-path}/api/fashion-e-commerce-media-service/**
           filters:
             - StripPrefix=1
 
@@ -82,7 +82,7 @@ spring:
         - id: authentication-service-profile-whitelist
           uri: lb://FASHION-E-COMMERCE-PROFILE-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/profile-service/**, ${server.servlet.context-path}/api/profile/**, ${server.servlet.context-path}/api/address/**
+            - Path=${server.servlet.context-path}/api/profile-service/**, ${server.servlet.context-path}/api/profile/**, ${server.servlet.context-path}/api/address/**, ${server.servlet.context-path}/api/fashion-e-commerce-profile-service/**
           filters:
             - StripPrefix=1
 
@@ -97,7 +97,7 @@ spring:
         - id: authentication-service-order-whitelist
           uri: lb://FASHION-E-COMMERCE-ORDER-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/order-service/**, ${server.servlet.context-path}/api/order/**
+            - Path=${server.servlet.context-path}/api/order-service/**, ${server.servlet.context-path}/api/order/**, ${server.servlet.context-path}/api/fashion-e-commerce-order-service/**
           filters:
             - StripPrefix=1
 
@@ -112,7 +112,7 @@ spring:
         - id: authentication-service-payment-whitelist
           uri: lb://FASHION-E-COMMERCE-PAYMENT-SERVICE
           predicates:
-            - Path=${server.servlet.context-path}/api/payment-service/**, ${server.servlet.context-path}/api/payment/**
+            - Path=${server.servlet.context-path}/api/payment-service/**, ${server.servlet.context-path}/api/payment/**, ${server.servlet.context-path}/api/fashion-e-commerce-payment-service/**
           filters:
             - StripPrefix=1
 
