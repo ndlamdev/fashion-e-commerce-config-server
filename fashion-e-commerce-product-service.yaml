@@ -29,6 +29,7 @@ spring:
 
 application:
   white-list:
+    - /${spring.application.name}/actuator/**
     - /greeting
 
 grpc:
