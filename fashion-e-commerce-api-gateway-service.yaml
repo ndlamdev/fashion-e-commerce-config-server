@@ -67,7 +67,15 @@ spring:
           filters:
             - StripPrefix=1
 
-        - id: authentication-service-inventory-whitelist
+        - id: authentication-service-cart-backlist
+          uri: lb://FASHION-E-COMMERCE-CART-SERVICE
+          predicates:
+            - Path=${server.servlet.context-path}/api/cart/**
+          filters:
+            - StripPrefix=1
+            - name: Authentication
+
+         - id: authentication-service-inventory-whitelist
           uri: lb://FASHION-E-COMMERCE-INVENTORY-SERVICE
           predicates:
             - Path=${server.servlet.context-path}/api/inventory-service/**, ${server.servlet.context-path}/api/fashion-e-commerce-inventory-service/**
@@ -80,14 +88,6 @@ spring:
             - Path=${server.servlet.context-path}/api/notification-service/**, ${server.servlet.context-path}/api/fashion-e-commerce-notification-service/**
           filters:
             - StripPrefix=1
-
-        - id: authentication-service-cart-backlist
-          uri: lb://FASHION-E-COMMERCE-CART-SERVICE
-          predicates:
-            - Path=${server.servlet.context-path}/api/cart/**
-          filters:
-            - StripPrefix=1
-            - name: Authentication
 
         - id: authentication-service-media-whitelist
           uri: lb://FASHION-E-COMMERCE-MEDIA-SERVICE
