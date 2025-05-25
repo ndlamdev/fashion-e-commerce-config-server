@@ -31,6 +31,8 @@ application:
   white-list:
     - /${spring.application.name}/actuator/**
     - /product-service/greeting
+    - /collection/v1/**
+    - /product/v1/**
 
 grpc:
   server:
