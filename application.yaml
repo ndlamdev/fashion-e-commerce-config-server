@@ -5,7 +5,7 @@ management:
     web:
       exposure:
         include: health, info, loggers, prometheus, metrics, trace
-      base-path: /${server.servlet.context-path}
+      base-path: /${spring.application.name}
   metrics:
     export:
       prometheus:
