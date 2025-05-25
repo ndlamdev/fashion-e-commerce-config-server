@@ -49,7 +49,7 @@ spring:
 application:
   white-list:
     - /${spring.application.name}/actuator/**
-    - /greeting
+    - /product-service/greeting
     - /collection/v1/**
     - /product/v1/**
   payos:
