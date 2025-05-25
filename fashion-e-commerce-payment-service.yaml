@@ -48,6 +48,7 @@ spring:
 
 application:
   white-list:
+    - /${spring.application.name}/actuator/**
     - /greeting
   payos:
     base-url: ${PAYOS_BASE_URL:https://firebase.ndlamdev.website/kimi-fashion/api/order/v1}
