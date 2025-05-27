@@ -25,7 +25,7 @@ spring:
               mapping: "data_variant_product:com.lamnguyen.inventory_service.message.DataVariantEvent"
   data:
     mongodb:
-      uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
+      uri: ${MONGO_PROTO:mongodb+srv}://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
       database: ${MONGO_DATABASE:inventory-fashion-e-commerce}
       auto-index-creation: true
 
