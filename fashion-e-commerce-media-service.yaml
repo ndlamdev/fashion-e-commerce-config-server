@@ -26,7 +26,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
+      uri: ${MONGO_PROTO:mongodb+srv}://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
       database: ${MONGO_DATABASE:media-fashion-e-commerce}
       auto-index-creation: true
 
