@@ -1,6 +1,7 @@
 spring:
   data:
     mongodb:
+      uri: mongodb://${spring.data.mongodb.username}:${spring.data.mongodb.password}@${spring.data.mongodb.host}/${spring.data.mongodb.database}
       username: admin
       password: admin
       host: localhost:27017
