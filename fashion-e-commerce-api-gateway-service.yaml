@@ -23,7 +23,7 @@ spring:
         response-timeout: 75s   # 15 giây
       discovery:
         locator:
-          enabled: false // chế độ tự tạo route  theo dạng: http://<gateway-host>:<port>/AUTH-SERVICE/api/xxx
+          enabled: false # chế độ tự tạo route  theo dạng: http://<gateway-host>:<port>/AUTH-SERVICE/api/xxx
       routes:
         - id: authentication-service-whitelist
           uri: lb://FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
