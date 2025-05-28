@@ -2,6 +2,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://${spring.data.mongodb.host}/${spring.data.mongodb.database}?maxPoolSize=150&minPoolSize=30&waitQueueTimeoutMS=5000&connectTimeoutMS=10000&socketTimeoutMS=30000
-      database: ${MONGO_DATABASE:media-fashion-e-commerce}
+      database: ${MONGO_DATABASE:fashion-e-commerce}
       auto-index-creation: true
       host: "{cipher}AYCWpdrUMTIV1VvK3ljF+VPymLiNOd5I7NegNahKtCAK4IjpE3tIavD/of3YiTtFVEiTLrK9O9Pv3Z/SHJoeintlVFEYSkrej2EjmYw9T+oQbCdpOQFv5TP971KnL6/uSYSHlDIFGkymFKfoJn3vEntD7Uw+7dIL7WNhRJ3akWkAGdUkbjGolYGl74mPWQ0yAT56byF7FM9YwC8F1L2bvpZvcx4Mbc+70/u26KR8GQiFlqpvzEv+cxtMUH6l2xAeFioidD3XRa7ZxXIEYP9Zlw2rFNS96MSvwk1MZIBanPDT1ftFgFIbRcx6Q4AwAhIOXANFGO0vY3HHIp4ESSo/XGBxjwymWF89+d5szrMUEV13vchvV2dvC3Htde2pb5qoYLrsmraVi4IvyqfMKSbCFpnj6p0P5GPilywJP8/b77hiSwLD5dAVZPui1oDMqbh64LI8GqFluQwF6dtzlZA0XLlKXYtv6EERhcpSrZe3Ka4N5hwbYGMraVtFcd2qsp77xi91/CyuMW5gaizufjrgJ4E6tboxOfVvU71g+aSqv6QiYw=="
