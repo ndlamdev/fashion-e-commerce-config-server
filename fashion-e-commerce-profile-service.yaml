@@ -53,8 +53,3 @@ application:
 grpc:
   server:
     port: ${GRPC_PORT:8102}
-
-logging:
-  level:
-    io.grpc: DEBUG
-    net.devh.boot.grpc: DEBUG
