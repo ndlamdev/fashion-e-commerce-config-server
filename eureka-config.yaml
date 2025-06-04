@@ -12,5 +12,4 @@ eureka:
     ip-address: ${SERVICE_IP:127.0.0.1}
     hostname: ${EUREKA_CLIENT_HOSTNAME:localhost}
     metadata-map:
-      grpc.port: ${grpc.server.port}
-      gRPC_port: 0
+      gRPC_port: ${grpc.server.port}
