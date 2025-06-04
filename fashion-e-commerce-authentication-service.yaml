@@ -120,8 +120,3 @@ grpc:
     fashion-e-commerce-profile-service:
       enableKeepAlive: true
       negotiationType: plaintext
-
-logging:
-  level:
-    io.grpc: DEBUG
-    net.devh.boot.grpc: DEBUG
