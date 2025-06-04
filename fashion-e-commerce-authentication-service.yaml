@@ -120,10 +120,6 @@ grpc:
     fashion-e-commerce-profile-service:
       enableKeepAlive: true
       negotiationType: plaintext
-      load-balancer: round_robin
-      discovery:
-        enabled: true
-        port: metadata:grpc.port
 
 logging:
   level:
