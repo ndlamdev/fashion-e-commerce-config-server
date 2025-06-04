@@ -120,3 +120,4 @@ grpc:
     fashion-e-commerce-profile-service:
       enableKeepAlive: true
       negotiationType: plaintext
+      load-balancer: round_robin
