@@ -121,3 +121,8 @@ grpc:
       enableKeepAlive: true
       negotiationType: plaintext
       load-balancer: round_robin
+
+logging:
+  level:
+    io.grpc: DEBUG
+    net.devh.boot.grpc: DEBUG
