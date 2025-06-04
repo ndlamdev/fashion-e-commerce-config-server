@@ -119,4 +119,5 @@ grpc:
   client:
     fashion-e-commerce-profile-service:
       enableKeepAlive: true
+      keepAliveWithoutCalls: true
       negotiationType: plaintext
