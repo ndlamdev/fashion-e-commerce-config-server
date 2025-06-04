@@ -11,3 +11,5 @@ eureka:
     preferIpAddress: ${PREFER_IP_ADDRESS:true}
     ip-address: ${SERVICE_IP:127.0.0.1}
     hostname: ${EUREKA_CLIENT_HOSTNAME:localhost}
+    metadata-map:
+      grpc.port: ${grpc.server.port}
