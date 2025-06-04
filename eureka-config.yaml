@@ -13,4 +13,4 @@ eureka:
     hostname: ${EUREKA_CLIENT_HOSTNAME:localhost}
     metadata-map:
       grpc.port: ${grpc.server.port}
-      gRPC__port: 0
+      gRPC_port: 0
