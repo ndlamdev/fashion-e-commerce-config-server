@@ -17,18 +17,6 @@ spring:
   application:
     name: fashion-e-commerce-api-gateway-service
   cloud:
-    loadbalancer:
-      eager-load:
-        clients:
-          - FASHION-E-COMMERCE-PRODUCT-SERVICE
-          - FASHION-E-COMMERCE-INVENTORY-SERVICE
-          - FASHION-E-COMMERCE-MEDIA-SERVICE
-          - FASHION-E-COMMERCE-ORDER-SERVICE
-          - FASHION-E-COMMERCE-CART-SERVICE
-          - FASHION-E-COMMERCE-PAYMENT-SERVICE
-          - FASHION-E-COMMERCE-AUTHENTICATION-SERVICE
-          - FASHION-E-COMMERCE-PROFILE-SERVICE
-          - FASHION-E-COMMERCE-NOTIFICATION-SERVICE
     gateway:
       httpclient:
         connect-timeout: 60000  # 10 giây
