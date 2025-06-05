@@ -13,7 +13,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "info_address_shipping:com.lamnguyen.profile_service.message.InfoAddressShipping"
+              mapping: "info_address_shipping:com.lamnguyen.profile_service.event.InfoAddressShipping"
     consumer:
       group-id: profile-user
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -24,7 +24,7 @@ spring:
             trusted:
               packages: "save_user_detail"
             type:
-              mapping: "save_profile:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage,info_address_shipping_topic:com.lamnguyen.profile_service.event.InfoAddressShippingEvent"
+              mapping: "save_profile:com.lamnguyen.profile_service.message.SaveProfileUserMessage,update_avatar_user:com.lamnguyen.profile_service.message.UpdateAvatarUserMessage"
   application:
     name: fashion-e-commerce-profile-service
   jpa:
