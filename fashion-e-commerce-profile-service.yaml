@@ -13,7 +13,7 @@ spring:
         spring:
           json:
             type:
-              mapping: "info_address_shipping:com.lamnguyen.profile_service.event.InfoAddressShipping"
+              mapping: "info_address_shipping_topic:com.lamnguyen.profile_service.event.InfoAddressShippingEvent"
     consumer:
       group-id: profile-user
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
