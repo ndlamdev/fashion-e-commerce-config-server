@@ -1,5 +1,9 @@
 author: Nguyen Dinh Lam
 
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
 management:
   endpoints:
     web:
