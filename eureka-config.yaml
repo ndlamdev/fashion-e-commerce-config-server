@@ -9,7 +9,7 @@ eureka:
   instance:
     prefer-Ip-Address: ${PREFER_IP_ADDRESS:true}
     preferIpAddress: ${PREFER_IP_ADDRESS:true}
-    ip-address: ${SERVICE_IP:172.16.17.50}
+    ip-address: ${SERVICE_IP:172.16.16.104}
     hostname: ${EUREKA_CLIENT_HOSTNAME:localhost}
     metadata-map:
       gRPC_port: ${grpc.server.port}
