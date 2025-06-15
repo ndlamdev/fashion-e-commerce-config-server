@@ -57,3 +57,9 @@ grpc:
     fashion-e-commerce-order-service:
       enableKeepAlive: true
       negotiationType: plaintext
+
+
+logging:
+  level:
+    net.devh: DEBUG
+    io.grpc: DEBUG
