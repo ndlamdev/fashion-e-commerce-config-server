@@ -1,5 +1,5 @@
 server:
-  port: 88888
+  port: 7999
   servlet:
     context-path: /kimi-fashion
 
