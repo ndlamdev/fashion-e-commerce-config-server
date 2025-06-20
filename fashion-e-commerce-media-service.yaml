@@ -35,7 +35,7 @@ application:
     - /${spring.application.name}/actuator/**
     - /media-service/greeting
     - /resource/images/**
-  path-file-manager: ${PATH_FILE_MANAGE:/home/user/Downloads/resources}
+  path-file-manager: ${PATH_FILE_MANAGE:D:\tai_lieu_hoc_tap\chuyen_de_web\fashion_e_commerce\resources}
 
 grpc:
   server:
